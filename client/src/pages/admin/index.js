@@ -25,7 +25,7 @@ function AdminDashboard() {
 
   const fetchData = async () => {
     try {
-      const response = await axios.post('https://call-1.onrender.com/admin', null, config);
+      const response = await axios.post('https://mega-tel-in3a.onrender.com/admin', null, config);
       setUserData(response.data);
     } catch (error) {
       setError(error);
@@ -44,7 +44,7 @@ function AdminDashboard() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('https://call-1.onrender.com/join', { receiver: email }, config);
+      await axios.post('https://mega-tel-in3a.onrender.com/join', { receiver: email }, config);
       alert(t('messages.emailSent')); // Translate success message
       setEmail('');
     } catch (error) {
@@ -60,7 +60,7 @@ function AdminDashboard() {
         return;
       }
 
-      await axios.delete(`https://call-1.onrender.com/users/${userId}`, config);
+      await axios.delete(`https://mega-tel-in3a.onrender.com/users/${userId}`, config);
       alert(t('messages.deleteSuccess')); // Translate success message
       await fetchData();
     } catch (error) {
