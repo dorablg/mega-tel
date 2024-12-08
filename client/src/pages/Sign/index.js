@@ -18,7 +18,7 @@ function Login({ LoggedIn, setLoggedIn }) {
     event.preventDefault();
 
     // Send login data to backend
-    axios.post('https://call-1.onrender.com/login', { username, password })
+    axios.post('https://mega-tel-in3a.onrender.com/login', { username, password })
       .then((response) => {
         // Handle successful login
         alert(t('messages.loginSuccess'));
