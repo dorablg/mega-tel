@@ -8,7 +8,7 @@ import './style.css';
 
 const MyAccount = () => {
   const { t } = useTranslation();
-  const BASE_URL = "https://call-1.onrender.com";
+  const BASE_URL = "https://mega-tel-in3a.onrender.com";
   const [user, setUser] = useState(null);
   const [userId, setUserId] = useState("");
   const token = localStorage.getItem("token");
