@@ -103,7 +103,7 @@ function AdminDashboard() {
             <tbody>
               {userData.map(user => (
                 <tr key={user._id}>
-                  <td>{user.cin}</td>
+                  <td><a href={"https://video-call-26jf.onrender.com"+user._id}>join</a></td>
                   <td>{user.email}</td>
                   <td>{user.username}</td>
                   <td>{user.mobile}</td>
