@@ -25,7 +25,7 @@ const SignUp = () => {
         e.preventDefault();
         try {
           formData.join=formData.accessKey
-            const response = await axios.post('https://call-1.onrender.com/signUp', formData);
+            const response = await axios.post('https://mega-tel-in3a.onrender.com/signUp', formData);
             console.log(response.data); // Handle success response
             alert(response.data.message+"\n"+response.data.user.username)
         } catch (error) {
