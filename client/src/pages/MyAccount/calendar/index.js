@@ -14,7 +14,7 @@ const CalendarComponent = () => {
     const fetchCalendarData = async () => {
       try {
         const token = localStorage.getItem('token');
-        const { data } = await axios.post('https://call-1.onrender.com/user/calendar', {}, {
+        const { data } = await axios.post('https://mega-tel-in3a.onrender.com/user/calendar', {}, {
           headers: {
             Authorization: `Bearer ${token}`
           }
@@ -55,7 +55,7 @@ const CalendarComponent = () => {
         content: values.content
       };
 
-      const { data } = await axios.post('https://call-1.onrender.com/calendar', newEvent, {
+      const { data } = await axios.post('https://mega-tel-in3a.onrender.com/calendar', newEvent, {
         headers: {
           Authorization: `Bearer ${token}`
         }
